@@ -8,12 +8,12 @@ name = "ethers"
 crate-type = ["cdylib"]
 
 [dependencies]
-pyo3 = { version = "0.16.1", features = ["extension-module", "num-bigint"] }
-pyo3-asyncio = { version = "0.16", features = ["attributes", "tokio-runtime"] }
+pyo3 = { version = "0.16.6", features = ["extension-module", "num-bigint"] }
+pyo3-asyncio = { version = "0.16.0", features = ["attributes", "tokio-runtime"] }
 ethers = { git = "https://github.com/gakonst/ethers-rs", features = ["ws", "rustls", "abigen", "ipc"]}
 tokio = "1.9"
-serde_json = "1.0"
+serde_json = "1.0.85"
 pythonize = "0.16.0"
-serde = "1.0.136"
+serde = "1.0.144"
 num-bigint = "0.4.3"
 [workspace]
